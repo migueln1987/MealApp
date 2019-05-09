@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 import java.util.*
 
 @Entity
-data class Meal(
+data class Meal constructor(
     val dateModified: Date,
     @PrimaryKey val idMeal: String,
     val strArea: String,
